@@ -1,0 +1,15 @@
+-- CreateTable
+CREATE TABLE `Student` (
+    `id` INTEGER NOT NULL AUTO_INCREMENT,
+    `ra` VARCHAR(191) NOT NULL,
+    `name` VARCHAR(191) NOT NULL,
+    `course` VARCHAR(191) NOT NULL,
+    `group` VARCHAR(191) NOT NULL,
+    `codcur` INTEGER NOT NULL,
+    `codper` INTEGER NOT NULL,
+    `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    `updatedAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+
+    UNIQUE INDEX `Student_ra_key`(`ra`),
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
