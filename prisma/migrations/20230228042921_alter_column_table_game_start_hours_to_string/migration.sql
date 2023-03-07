@@ -1,3 +1,0 @@
--- AlterTable
-ALTER TABLE `Game` MODIFY `startHours` VARCHAR(191) NOT NULL,
-    MODIFY `endHours` VARCHAR(191) NOT NULL;

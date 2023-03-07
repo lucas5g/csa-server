@@ -1,5 +1,0 @@
--- AlterTable
-ALTER TABLE `Team` ADD COLUMN `genreId` INTEGER NULL;
-
--- AddForeignKey
-ALTER TABLE `Team` ADD CONSTRAINT `Team_genreId_fkey` FOREIGN KEY (`genreId`) REFERENCES `Genre`(`id`) ON DELETE SET NULL ON UPDATE CASCADE;
